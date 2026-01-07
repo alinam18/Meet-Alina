@@ -14,14 +14,30 @@ pageClass: experience
 
   <section class="experiences">
     <div class="button-grid">
+      <!-- IAG -->
+      <button type="button" class="btn" onclick="openPopup('exp-iag')">IAG</button>
+      <div class="popup" id="exp-iag" aria-hidden="true">
+        <div class="popup-content">
+          <img src="{{ '/images/iag-logo-keyline-purple.png' | url }}" class="logo" alt="Iag logo">
+          <h3>Technology Intern</h3>
+          <ul>
+            <li>Implemented automation workflows in Atlassian to streamline task tracking and project visibility.</li>
+            <li>Designed dashboards using SQL to monitor operational processes and team performance.</li>
+            <li>Documented workflows and automations in Jira, Confluence, and SharePoint.</li>
+          </ul>
+
+          <div class="popup-actions">
+            <button type="button" onclick="closePopup('exp-iag')">Close</button>
+          </div>
+        </div>
+      </div>
 
       <!-- Data Engineering Intern -->
-      <button type="button" class="btn" onclick="openPopup('exp-dataarmy')">Data Engineering Intern</button>
+      <button type="button" class="btn" onclick="openPopup('exp-dataarmy')">Data Army</button>
       <div class="popup" id="exp-dataarmy" aria-hidden="true">
         <div class="popup-content">
-          <h3>Data Army</h3>
           <img src="{{ '/images/DataArmy.png' | url }}" class="logo" alt="Data Army logo">
-
+          <h3>Data Engineering Intern</h3>
           <ul>
             <li>Built <b>cloud solutions</b> using <b>Snowflake, AWS, and Microsoft Azure</b> to deliver optimised client solutions.</li>
             <li>Developed <b>machine learning models</b> to analyse data and deliver targeted solutions.</li>
@@ -35,11 +51,11 @@ pageClass: experience
       </div>
 
       <!-- Campari -->
-      <button type="button" class="btn" onclick="openPopup('exp-campari')">Software Engineering & Master Data Science Intern</button>
+      <button type="button" class="btn" onclick="openPopup('exp-campari')">Campari Group</button>
       <div class="popup" id="exp-campari" aria-hidden="true">
         <div class="popup-content">
-          <h3>Campari Group</h3>
           <img src="{{ '/images/campari-group-logo.png' | url }}" class="logo" alt="Campari logo">
+          <h3>Software Engineering Intern</h3>
 
           <ul>
             <li><b>Developed and automated</b> a solution for the APAC team to validate database accuracy, improving <b>data quality and integrity</b>.</li>
@@ -56,10 +72,10 @@ pageClass: experience
       </div>
 
       <!-- Accounting Assistant -->
-      <button type="button" class="btn" onclick="openPopup('exp-accounting')">Accounting Assistant</button>
+      <button type="button" class="btn" onclick="openPopup('exp-accounting')">Parras and Associates</button>
       <div class="popup" id="exp-accounting" aria-hidden="true">
         <div class="popup-content">
-          <h3>Parras and Associates</h3>
+          <h3>Accounting Assistant</h3>
 
           <ul>
             <li>Implemented <b>automated solutions for data entry and integration</b>, improving productivity and accuracy.</li>
