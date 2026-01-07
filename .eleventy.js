@@ -11,6 +11,8 @@ module.exports = function (eleventyConfig) {
     },
     templateFormats: ["njk", "html"],
     htmlTemplateEngine: "njk",
+    pathPrefix: "/Meet-Alina/",
+
 
     // If deploying to GitHub Pages at /Meet-Alina/, UNCOMMENT this:
     // pathPrefix: "/Meet-Alina/",
