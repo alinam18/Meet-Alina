@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    font-size: 100%;
+    
+}
+
+.background{
+
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../blueGradient.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.logo{
+    width:200px;
+}
+
+nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0; 
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 200;
+}
+
+
+.content {
+    position: relative;
+    margin-top: 15%;
+    z-index: 2;
+}
+
+.content h1{
+    font-size: 6vw;
+    max-width: 600px;
+}
+
+.content p{
+    font-size: 25px;
+    max-width: 800px;
+    font-weight: 200;
+    margin: 10px 0 50px;
+    animation-delay: 0.5s;
+
+}
+
+
+
+.animation {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+    100%{
+        opacity: 1;
+        transform: translateY(0px )
+    }
+    
+}
+
+
+
+
+.btn{
+    /* padding: 50px 100px; */
+    padding: 4vw;
+    background-color: #FFFF;
+    border: 0;
+    cursor: pointer;
+    font-size: 2vw;
+    font-weight: 200;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    
+}
+
+.btn:active{
+    transform: scale(0.95);
+}
+
+
+
+.popup{
+    background-color: #DAEDF7;
+    border-radius: 10px;
+    position:fixed;
+    top: 50%;
+    left:50%;
+    /* testing purpose */
+    transform: translate(-50%,-50%);
+
+    /* transform: translate(-50%,-50%) scale(0.1); */
+    z-index: 1000;
+    text-align: center;
+    padding: 10px 30px;
+    /* padding: 10vw; */
+
+    font-weight: 200;
+    font-size: 75%;
+    /* width: 80vw; */
+    height: auto;
+    max-height: 80vh;
+    display: none; /* Change visibility to display: none */
+    box-shadow: 0px 0px 50000px rgba(0, 0, 0, 0.5);
+
+}
+
+.popup button {
+    margin-top: 10px;
+    background-color: #333;
+    color: #FFFF;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 30px;
+    font-weight: 200;
+    font-size: 80%;
+    transition: transform 0.2s;
+    border-radius: 4px;
+}
+
+.main h3 {
+    font-weight: 200;
+    font-size: 6vw;
+}
+
+.main p{
+    font-weight: 200;
+    font-size: 2vw;
+
+}
+
+.main .character-btn {
+    background-color: #DAEDF7;
+    border: none; /* Reset any borders */
+    padding: 0; /* Remove any extra padding around the images */
+}
+
+.main .character-btn img {
+    width: 100px; /* Adjust size as necessary */
+    transition: transform 0.3s ease;
+}
+
+.character-btn:hover {
+    background-color: #DAEDF7;
+    transform: scale(1.1); /* Slight zoom effect when hovering */
+
+}
+
+
+
+
+.character-btn.selected {
+    border: 5px solid navy; /* Border around the selected image */
+    background-color: #DAEDF7;
+    z-index: 5;
+
+}
+
+
+#result-display {
+    margin-top: 20px;
+    font-size: 1.5em;
+
+}

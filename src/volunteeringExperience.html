@@ -1,0 +1,117 @@
+---
+layout: layout.njk
+title: "Meet Alina - Volunteering"
+description: "Extracurricular activities and volunteering"
+nav_active: volunteeringExperience
+pageClass: volunteeringExperience
+---
+
+<section class="main container">
+  <div class="content">
+    <h1 class="animation">Extracurricular Activities</h1>
+  </div>
+
+  <section class="volunteering">
+    <div class="button-grid">
+
+      <!-- UNSW Data Science Society -->
+      <button type="button" class="btn" onclick="openPopup('vol-datasoc')">UNSW Data Science Society</button>
+      <div class="popup" id="vol-datasoc" aria-hidden="true">
+        <div class="popup-content">
+          <h3>UNSW Data Science Society</h3>
+          <img src="{{ '/images/datasoc.png' | url }}" class="logo" alt="UNSW Data Science Society logo">
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <h4>Vice President of Operations — 2025</h4>
+              <p>Oversaw day-to-day operations and ensured successful execution of events and initiatives.</p>
+              <p>Worked closely with the executive team to streamline workflows and improve delivery efficiency.</p>
+            </div>
+
+            <div class="timeline-item">
+              <h4>Marketing Director — 2024</h4>
+              <p>Led marketing strategy and content to drive engagement across platforms and promote events/partnerships.</p>
+              <p>Strengthened brand presence within the data science community.</p>
+            </div>
+
+            <div class="timeline-item">
+              <h4>Marketing Subcommittee Member — 2023</h4>
+              <p>Supported marketing campaigns to engage students and grow the community.</p>
+              <p>Contributed to branded merchandise development to improve society visibility.</p>
+            </div>
+          </div>
+
+          <div class="popup-actions">
+            <button type="button" onclick="closePopup('vol-datasoc')">Close</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- UNSW Women in Technology -->
+      <button type="button" class="btn" onclick="openPopup('vol-wit')">UNSW Women In Technology</button>
+      <div class="popup" id="vol-wit" aria-hidden="true">
+        <div class="popup-content">
+          <h3>UNSW Women In Technology</h3>
+          <img src="{{ '/images/WIT.png' | url }}" class="logo" alt="UNSW Women In Technology logo">
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <h4>Careers Subcommittee Member — 2023</h4>
+              <p>Planned and organised career-focused events connecting students with industry professionals and employers.</p>
+              <p>Worked with sponsorship to secure partnerships and create value for sponsors and students.</p>
+            </div>
+          </div>
+
+          <div class="popup-actions">
+            <button type="button" onclick="closePopup('vol-wit')">Close</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nippon Student Association -->
+      <button type="button" class="btn" onclick="openPopup('vol-nsa')">UNSW Nippon Student Association</button>
+      <div class="popup" id="vol-nsa" aria-hidden="true">
+        <div class="popup-content">
+          <h3>Nippon Student Association</h3>
+          <img src="{{ '/images/nsa.webp' | url }}" class="logo" alt="Nippon Student Association logo">
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <h4>Sponsorship Executive — 2024</h4>
+              <p>Analysed sponsorship data to identify trends and opportunities; produced reports to support decisions.</p>
+              <p>Created proposals and negotiated deals, building partnerships with key sponsors.</p>
+              <p>Developed sponsorship strategy informed by analysis, increasing sponsor engagement and contributions.</p>
+            </div>
+
+            <div class="timeline-item">
+              <h4>Communications Subcommittee Member — 2023</h4>
+              <p>Improved outreach and built connections with other societies to support collaborations.</p>
+              <p>Created marketing materials that increased visibility and community engagement.</p>
+            </div>
+          </div>
+
+          <div class="popup-actions">
+            <button type="button" onclick="closePopup('vol-nsa')">Close</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</section>
+
+<script>
+  window.openPopup = window.openPopup || function (popupId) {
+    const popup = document.getElementById(popupId);
+    if (!popup) return;
+    popup.classList.add('openPopup');
+    popup.setAttribute('aria-hidden', 'false');
+  };
+
+  window.closePopup = window.closePopup || function (popupId) {
+    const popup = document.getElementById(popupId);
+    if (!popup) return;
+    popup.classList.remove('openPopup');
+    popup.setAttribute('aria-hidden', 'true');
+  };
+</script>

@@ -1,0 +1,16 @@
+<footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">© {{ year or '2026' }} Alina Cui. All rights reserved.</p>
+  
+      <nav class="footer-links">
+        {% if site.github_url %}
+          <a href="{{ site.github_url }}" target="_blank" rel="noopener">GitHub</a>
+        {% endif %}
+  
+        {% if site.linkedin_url %}
+          <a href="{{ site.linkedin_url }}" target="_blank" rel="noopener">LinkedIn</a>
+        {% endif %}
+      </nav>
+    </div>
+  </footer>
+  

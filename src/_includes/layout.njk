@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="{{ lang or 'en' }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{{ title or 'Alina — Portfolio' }}</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ title or 'Alina — Portfolio' }}" />
+
+    <!-- Assets -->
+    <link rel="icon" href="{{ '/favicon.ico' | url }}" />
+    <link rel="stylesheet" href="{{ '/styles/main.css' | url }}" />
+  </head>
+
+  <body class="{{ pageClass or '' }}">
+    {% include "header.njk" ignore missing %}
+
+    <main id="main" class="container site-main">
+      {{ content | safe }}
+    </main>
+
+    {% include "footer.njk" ignore missing %}
+
+    <!-- Only keep this if you actually have public/scripts/main.js -->
+    <!-- <script src="{{ '/scripts/main.js' | url }}" defer></script> -->
+  </body>
+</html>

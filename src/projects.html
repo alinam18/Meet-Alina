@@ -1,0 +1,231 @@
+---
+layout: layout.njk
+title: "Meet Alina - Projects"
+description: "Alina's Projects"
+nav_active: projects
+pageClass: projects
+---
+
+<section class="main container">
+  <div class="content">
+    <h1 class="animation">Projects</h1>
+    <p class="animation">Below are some projects which I have been working on.</p>
+  </div>
+
+  <section class="projects">
+    <div class="button-grid">
+
+      <!-- IBM Machine Learning Projects -->
+      <button type="button" class="btn" onclick="openPopup('popup1')">IBM Machine Learning Projects</button>
+      <div class="popup" id="popup1" aria-hidden="true">
+        <div class="popup-content">
+            <h3>IBM Machine Learning Projects</h3>
+            <p>
+            In this project, I am part of a team of 4–5 students, where we analyse datasets and solve real-world problems.
+            Working closely with IBM, we utilised a suite of tools to deliver solutions. Through this project, I am gaining
+            hands-on experience and developing skills in:
+            </p>
+            <ul class="no-bullets">
+            <li><strong>Data Processing:</strong> Using Python and Pandas for cleaning, transforming, and preparing data.</li>
+            <li><strong>Predictive Modelling:</strong> Building and validating models; communicating results with visualisations.</li>
+            <li><strong>Large Language Models (LLMs):</strong> Exploring applications of modern language models.</li>
+            <li><strong>IBM Watsonx:</strong> Using IBM’s AI platform for analysis and deployment.</li>
+            <li><strong>RAG Optimization:</strong> Implementing Retrieval-Augmented Generation techniques.</li>
+            <li><strong>Enterprise Search:</strong> Developing search solutions for large-scale data.</li>
+            </ul>
+            <p>
+            This project provides the opportunity to work with cutting-edge technologies and gain practical experience in ML
+            and data science.
+            </p>
+
+            <div class="slideshow-container">
+            <iframe
+                class="slideshow-iframe"
+                loading="lazy"
+                src="https://www.canva.com/design/DAGJa58BwW4/ycM5CmyqPECeU2x3r59Z2Q/view?embed"
+                allow="fullscreen"
+            ></iframe>
+            </div>
+
+            <p>
+            <a
+                href="https://www.canva.com/design/DAGJa58BwW4/ycM5CmyqPECeU2x3r59Z2Q/view"
+                target="_blank"
+                rel="noopener"
+            >
+                Open slideshow
+            </a>
+            </p>
+
+            <div>
+            <button type="button" onclick="closePopup('popup1')">Close</button>
+            </div>
+        </div>
+      </div>
+
+      <!-- Automated Geographic Data Extraction and Processing System -->
+      <button type="button" class="btn" onclick="openPopup('popup6')">Automated Geographic Data Extraction and Processing System</button>
+      <div class="popup" id="popup6" aria-hidden="true">
+        <div class="popup-content">
+
+            <h3>Automated Geographic Data Extraction and Processing System</h3>
+            <p>
+            Developed an automated solution to extract, process, and analyse geospatial data from a RESTful API and export it
+            into a structured CSV format. The system handles large volumes of data and complex geospatial attributes.
+            </p>
+            <ul class="no-bullets">
+            <li>
+                <b>Key features:</b> API integration (or scraping fallback), multi-format handling (JSON/XML/CSV/text),
+                error handling (rate limits/CAPTCHAs/structure changes), automation & scheduling, and export-ready output.
+            </li>
+            <li>
+                <b>Learnings & challenges:</b> API limitations and fallbacks, handling unstructured data, improving scraping
+                efficiency while staying compliant. Future: validation/quality checks, performance and recovery.
+            </li>
+            </ul>
+            <p>
+            <a href="https://github.com/alinam18/AutomationDataExtraction" target="_blank" rel="noopener">
+                View the code on GitHub
+            </a>
+            </p>
+            <div>
+            <button type="button" onclick="closePopup('popup6')">Close</button>
+            </div>
+        </div>
+    </div>
+
+      <!-- Personal Fitness Dashboard Project -->
+      <button type="button" class="btn" onclick="openPopup('popup5')">Personal Fitness Dashboard Project</button>
+      <div class="popup" id="popup5" aria-hidden="true">
+        <div class="popup-content">
+
+            <h3>Personal Fitness Dashboard Project</h3>
+            <p>
+            Built an interactive Power BI dashboard to track and analyse personal fitness data (steps, calories, distance)
+            for actionable insights.
+            </p>
+            <ul class="no-bullets">
+            <li>Designed a Power BI dashboard tracking steps, calories, distance, and active vs resting time.</li>
+            <li>Collected and cleaned health-app data to ensure data integrity for analysis.</li>
+            <li>Created interactive visuals (cards, pie charts, line graphs) showing monthly and yearly trends.</li>
+            <li>Optimised the data pipeline to improve clarity and usability of insights.</li>
+            </ul>
+
+            <div class="video-container">
+            <video controls>
+                <source src="{{ '/media/myAlina-health-dashboard.mp4' | url }}" type="video/mp4">
+            </video>
+            </div>
+
+            <div class="download-link">
+            <a href="{{ '/downloads/myalinahealthapp.pbix' | url }}" download>
+                Download the Power BI file
+            </a>
+            </div>
+
+            <div>
+            <button type="button" onclick="closePopup('popup5')">Close</button>
+            </div>
+        </div>
+    </div>
+
+      <!-- Resume Website Project -->
+      <button type="button" class="btn" onclick="openPopup('popup2')">My Resume Website</button>
+      <div class="popup" id="popup2" aria-hidden="true">
+        <div class="popup-content">
+
+            <h3>My Resume Website</h3>
+            <p>
+            I created a personal resume website using HTML, CSS and JavaScript. This project involved:
+            </p>
+            <ul class="no-bullets">
+            <li>Designing a clean UI to showcase skills, experiences, and projects.</li>
+            <li>Building a responsive layout using HTML and CSS.</li>
+            <li>Adding interactive elements and smooth navigation with JavaScript.</li>
+            </ul>
+
+            <p>
+            <a href="https://alinam18.github.io/Resume-Version-2/" target="_blank" rel="noopener">
+                Visit the website
+            </a>
+            </p>
+
+            <a href="https://alinam18.github.io/Resume-Version-2/" target="_blank" rel="noopener">
+            <img src="{{ '/images/Home_page.png' | url }}" class="website_overview" alt="Resume website overview">
+            </a>
+
+            <div>
+            <button type="button" onclick="closePopup('popup2')">Close</button>
+            </div>
+        </div>
+      </div>
+
+      <!-- SQL & Python Pokemon Managing System -->
+      <button type="button" class="btn" onclick="openPopup('popup3')">SQL & Python Pokemon Managing System</button>
+      <div class="popup" id="popup3" aria-hidden="true">
+        <div class="popup-content">
+
+            <h3>SQL & Python Pokemon Managing System</h3>
+            <p>
+            Built Python scripts like a personalised Pokédex to extract and display information from a Pokémon database.
+            </p>
+            <ul class="no-bullets">
+            <li><strong>Python scripts:</strong> Extract and display detailed Pokémon information.</li>
+            <li><strong>SQL views & PLpgSQL:</strong> Functions to enhance retrieval and management.</li>
+            <li><strong>Data manipulation:</strong> Tools to simplify complex data challenges.</li>
+            </ul>
+
+            <p>
+            <a href="https://github.com/alinam18/Pokemon-Database-Sort-.git" target="_blank" rel="noopener">
+                View repo (if public)
+            </a>
+            </p>
+
+            <div>
+            <button type="button" onclick="closePopup('popup3')">Close</button>
+            </div>
+        </div>
+      </div>
+
+      <!-- Huffman Tree Encoder -->
+      <button type="button" class="btn" onclick="openPopup('popup4')">Huffman Tree Encoder in C</button>
+      <div class="popup" id="popup4" aria-hidden="true">
+        <div class="popup-content">
+
+            <h3>Huffman Tree Encoder in C</h3>
+            <p>Created a Huffman Tree Encoder using binary trees in C.</p>
+            <ul class="no-bullets">
+            <li><strong>Binary Search Tree (BST):</strong> Efficient sorted data storage and retrieval.</li>
+            <li><strong>Huffman Tree:</strong> Variable-length encoding based on character frequencies.</li>
+            </ul>
+            <p>
+            <a href="https://github.com/alinam18/My-Huffman-Tree-Encoder.git" target="_blank" rel="noopener">
+                View repo 
+            </a>
+            </p>
+            <div>
+            <button type="button" onclick="closePopup('popup4')">Close</button>
+            </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</section>
+
+<script>
+  // Prevent double-definition if multiple pages include similar scripts
+  window.openPopup = window.openPopup || function (popupId) {
+    const popup = document.getElementById(popupId);
+    if (!popup) return;
+    popup.classList.add('openPopup');
+    popup.setAttribute('aria-hidden', 'false');
+  };
+
+  window.closePopup = window.closePopup || function (popupId) {
+    const popup = document.getElementById(popupId);
+    if (!popup) return;
+    popup.classList.remove('openPopup');
+    popup.setAttribute('aria-hidden', 'true');
+  };
+</script>

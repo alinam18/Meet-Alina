@@ -1,0 +1,37 @@
+<header class="site-header">
+  <div class="topbar">
+    <div class="navbar" role="navigation" aria-label="Primary">
+      <div class="container navbar-inner">
+        <a class="brand" href="{{ '/' | url }}">
+          <img
+            src="{{ '/images/logo.png' | url }}"
+            alt="Alina logo"
+            class="brand-logo"
+            style="width:200px;"
+          >
+        </a>
+
+        {% set nav_links = [
+          { name: "Home",         key: "home",         url: "/" },
+          { name: "About",        key: "about",        url: "/about/" },
+          { name: "Projects",     key: "projects",     url: "/projects/" },
+          { name: "Experience",   key: "experience",   url: "/experience/" },
+          { name: "Volunteering", key: "volunteering", url: "/volunteeringExperience/" }
+          // deleted game for now 
+          // { name: "Games",        key: "games",        url: "/games/" }
+        ] %}
+
+        <nav id="primary-nav" class="primary-nav">
+          {% for link in nav_links %}
+            <a
+              href="{{ link.url | url }}"
+              class="nav-link{% if nav_active == link.key %} active{% endif %}"
+            >
+              {{ link.name }}
+            </a>
+          {% endfor %}
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>

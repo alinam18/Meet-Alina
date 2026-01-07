@@ -1,10 +1,9 @@
-# Resume-Version-2
-second updated resume website
-a# Resume-Version-2
+# Meet-Alina
+Personal website to get to know me. 
 
-https://alinam18.github.io/Resume-Version-2/
+https://alinam18.github.io/Meet-Alina/
 
-This is the second version of my online resume website, built as part of my front-end project. The site is designed to showcase my skills, experience, and various games I have developed.
+The site is designed to showcase my skills, experience, and various games I have developed.
 
 ## Technologies Used
 
