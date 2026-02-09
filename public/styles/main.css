@@ -5,19 +5,19 @@
     box-sizing: border-box;
   }
   
-  /* Base */
   html, body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     color: #333;
     width: 100%;
     min-height: 100vh;
-  
+    
     background-image: url("../images/blueGradient.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
+  
   
   /* Layout helpers */
   .container {
@@ -134,29 +134,7 @@ body.projects .projects {
     gap: 16px;
     margin-top: 24px;
   }
-  /* .button-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 20px;
-    width: 100%;
-    opacity: 1 !important; /* Forces visibility for debugging 
-} */
-  .btn {
-    padding: 14px 18px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    background: #ffffff;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: 400;
-    text-align: left;
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
-  }
-  
-  .btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-  }
+
   .popup {
     position: fixed;
     inset: 0;
@@ -201,6 +179,36 @@ body.projects .projects {
   .popup ul {
     margin: 12px 0 16px;
     padding-left: 20px;
+  }
+
+  .btn {
+    padding: 14px 18px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    background: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+    color: #333;
+    
+    /* Smooth transition for multiple properties */
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .btn:hover {
+    background: #ffffff; /* Brighter white on hover */
+    border-color: #0077cc; /* Highlights the border with your theme color */
+    color: #0077cc; /* Changes text color to blue */
+    transform: translateY(-5px) scale(1.02); /* Lifts and slightly grows the button */
+    box-shadow: 0 12px 24px rgba(0, 119, 204, 0.15); /* Adds a soft blue glow */
+  }
+  
+  /* Active state (when you actually click the button) */
+  .btn:active {
+    transform: translateY(-2px) scale(0.98);
+    box-shadow: 0 4px 10px rgba(0, 119, 204, 0.1);
   }
   
   .no-bullets {
@@ -318,4 +326,21 @@ body.projects .projects {
     border: 1px solid #ddd;
     border-radius: 4px;
     overflow: hidden;
+}
+
+/* Position the canvas so it covers the whole screen */
+#trail-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Allows you to click links/buttons underneath the sparks */
+  z-index: 1; /* Keeps them visible over the background */
+}
+
+/* Ensure your text stays on top of the sparks */
+.sectionOne {
+  position: relative;
+  z-index: 10; 
 }
