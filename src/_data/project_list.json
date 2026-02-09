@@ -9,7 +9,9 @@
         "<strong>Environment Matters:</strong> Students in rural areas showed higher proficiency in reading, while those in suburban areas excelled in mathematics.",
         "<strong>Class Size:</strong> Consistent with Project STAR findings, smaller class sizes had a notable positive impact on performance."
       ],
-      "pdf": "/downloads/MachineLearningProject.pdf"
+      "pdf": "/downloads/MachineLearningProject.pdf",
+      "github": "https://github.com/alinam18/Achievement-Prediction-Ensemble-Models-#"
+
     },
     {
       "id": "popup1",
