@@ -134,7 +134,13 @@ body.projects .projects {
     gap: 16px;
     margin-top: 24px;
   }
-  
+  /* .button-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+    opacity: 1 !important; /* Forces visibility for debugging 
+} */
   .btn {
     padding: 14px 18px;
     border-radius: 8px;
@@ -151,8 +157,7 @@ body.projects .projects {
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
   }
-  /* ===== Popup modal ===== */
-.popup {
+  .popup {
     position: fixed;
     inset: 0;
     background: rgba(0, 0, 0, 0.45);
@@ -161,11 +166,16 @@ body.projects .projects {
     justify-content: center;
     z-index: 1000;
     padding: 20px;
-  }
   
-  .popup.openPopup {
+    pointer-events: none; 
+    visibility: hidden;
+}
+
+.popup.openPopup {
     display: flex;
-  }
+    pointer-events: auto;
+    visibility: visible;
+}
   
   .popup-content {
     background: #ffffff;
@@ -303,3 +313,9 @@ body.projects .projects {
     height: auto;
     border-radius: 10px;
   }
+
+  .preview-window {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}

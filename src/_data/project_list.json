@@ -1,0 +1,83 @@
+[
+    {
+      "id": "popup7",
+      "title": "Achievement Prediction Ensemble Models",
+      "description": "This project investigates the key drivers of reading and mathematics performance among kindergarten students. Using a multi-level dataset (student, teacher, and school levels), we employed a variety of econometric and machine learning models to identify the most accurate predictors of academic success.",
+      "bullets": [
+        "<strong>Top Model:</strong> XGBoost outperformed all other models with a combined Mean Squared Error (MSE) of 990.22.",
+        "<strong>Primary Determinant:</strong> Socioeconomic Status (SES), proxied by eligibility for free/reduced-price lunch, was the strongest predictor of academic outcomes.",
+        "<strong>Environment Matters:</strong> Students in rural areas showed higher proficiency in reading, while those in suburban areas excelled in mathematics.",
+        "<strong>Class Size:</strong> Consistent with Project STAR findings, smaller class sizes had a notable positive impact on performance."
+      ],
+      "pdf": "/downloads/MachineLearningProject.pdf"
+    },
+    {
+      "id": "popup1",
+      "title": "IBM Machine Learning Projects",
+      "description": "Analysing datasets and solving real-world problems in collaboration with IBM, utilizing a suite of enterprise tools to deliver solutions.",
+      "bullets": [
+        "<strong>Data Processing:</strong> Using Python and Pandas for cleaning and transforming data.",
+        "<strong>Predictive Modelling:</strong> Building and validating models with visualisations.",
+        "<strong>IBM Watsonx & LLMs:</strong> Exploring AI platforms and Large Language Model applications.",
+        "<strong>RAG Optimization:</strong> Implementing Retrieval-Augmented Generation techniques."
+      ],
+      "canvaEmbed": "https://www.canva.com/design/DAGJa58BwW4/ycM5CmyqPECeU2x3r59Z2Q/view?embed",
+      "externalLink": "https://www.canva.com/design/DAGJa58BwW4/ycM5CmyqPECeU2x3r59Z2Q/view",
+      "linkText": "Open slideshow"
+    },
+    {
+      "id": "popup6",
+      "title": "Automated Geographic Data Extraction",
+      "description": "Developed an automated solution to extract, process, and analyse geospatial data from a RESTful API and export it into a structured CSV format.",
+      "bullets": [
+        "<b>Key features:</b> API integration, multi-format handling (JSON/XML/CSV), and error handling for rate limits.",
+        "<b>Challenges:</b> Handling unstructured data and improving scraping efficiency while staying compliant."
+      ],
+      "github": "https://github.com/alinam18/AutomationDataExtraction"
+    },
+    {
+      "id": "popup5",
+      "title": "Personal Fitness Dashboard Project",
+      "description": "Built an interactive Power BI dashboard to track and analyse personal fitness data (steps, calories, distance) for actionable insights.",
+      "bullets": [
+        "Designed a Power BI dashboard tracking health-app metrics.",
+        "Created interactive visuals showing monthly and yearly trends.",
+        "Optimised the data pipeline to improve clarity and usability."
+      ],
+      "video": "/media/myAlina-health-dashboard.mp4",
+      "download": "/downloads/myalinahealthapp.pbix",
+      "downloadText": "Download the Power BI file"
+    },
+    {
+      "id": "popup2",
+      "title": "My Resume Website",
+      "description": "Personal resume website designed to showcase skills and projects with a responsive UI.",
+      "bullets": [
+        "Built using HTML, CSS, and JavaScript.",
+        "Responsive layout with interactive elements.",
+        "Smooth navigation and clean UI design."
+      ],
+      "externalLink": "https://alinam18.github.io/Resume-Version-2/",
+      "image": "/images/Home_page.png"
+    },
+    {
+      "id": "popup3",
+      "title": "SQL & Python Pokemon Managing System",
+      "description": "Built Python scripts like a personalised Pokédex to extract and display information from a Pokémon database.",
+      "bullets": [
+        "<strong>Python scripts:</strong> Detailed Pokémon information extraction.",
+        "<strong>SQL & PLpgSQL:</strong> Enhanced retrieval and data management functions."
+      ],
+      "github": "https://github.com/alinam18/Pokemon-Database-Sort-.git"
+    },
+    {
+      "id": "popup4",
+      "title": "Huffman Tree Encoder in C",
+      "description": "Created a Huffman Tree Encoder using binary trees in C for variable-length encoding.",
+      "bullets": [
+        "<strong>Binary Search Tree (BST):</strong> Efficient data storage.",
+        "<strong>Huffman Tree:</strong> Encoding based on character frequencies."
+      ],
+      "github": "https://github.com/alinam18/My-Huffman-Tree-Encoder.git"
+    }
+  ]
