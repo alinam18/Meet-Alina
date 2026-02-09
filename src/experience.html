@@ -14,99 +14,35 @@ pageClass: experience
 
   <section class="experiences">
     <div class="button-grid">
-      <!-- IAG -->
-      <button type="button" class="btn" onclick="openPopup('exp-iag')">IAG</button>
-      <div class="popup" id="exp-iag" aria-hidden="true">
-        <div class="popup-content">
-          <img src="{{ '/images/iag-logo-keyline-purple.png' | url }}" class="logo" alt="Iag logo">
-          <h3>Technology Intern</h3>
-          <ul>
-            <li>Implemented automation workflows in Atlassian to streamline task tracking and project visibility.</li>
-            <li>Designed dashboards using SQL to monitor operational processes and team performance.</li>
-            <li>Documented workflows and automations in Jira, Confluence, and SharePoint.</li>
-          </ul>
-
-          <div class="popup-actions">
-            <button type="button" onclick="closePopup('exp-iag')">Close</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Data Engineering Intern -->
-      <button type="button" class="btn" onclick="openPopup('exp-dataarmy')">Data Army</button>
-      <div class="popup" id="exp-dataarmy" aria-hidden="true">
-        <div class="popup-content">
-          <img src="{{ '/images/DataArmy.png' | url }}" class="logo" alt="Data Army logo">
-          <h3>Data Engineering Intern</h3>
-          <ul>
-            <li>Built cloud solutions using Snowflake, AWS, and Microsoft Azure to deliver optimised client solutions.</li>
-            <li>Developed machine learning models to analyse data and deliver targeted solutions.</li>
-            <li>Managed data warehouses to improve storage, retrieval, and processing.</li>
-          </ul>
-
-          <div class="popup-actions">
-            <button type="button" onclick="closePopup('exp-dataarmy')">Close</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Campari -->
-      <button type="button" class="btn" onclick="openPopup('exp-campari')">Campari Group</button>
-      <div class="popup" id="exp-campari" aria-hidden="true">
-        <div class="popup-content">
-          <img src="{{ '/images/campari-group-logo.png' | url }}" class="logo" alt="Campari logo">
-          <h3>Software Engineering Intern</h3>
-
-          <ul>
-            <li>Developed and automated a solution for the APAC team to validate database accuracy, improving data quality and integrity.</li>
-            <li>Engineered an automation workflow to streamline data flow between customers and third parties, improving transparency and governance.</li>
-            <li>Used Power Automate, SAP, Excel, Python, and TypeScript to test, optimise, and implement automation processes.</li>
-            <li>Collaborated with data management to align warehouses and metrics across US, Italy, Japan, China, and Singapore.</li>
-            <li>Maintained data pipelines to ensure efficient operations and international consistency.</li>
-          </ul>
-
-          <div class="popup-actions">
-            <button type="button" onclick="closePopup('exp-campari')">Close</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Accounting Assistant -->
-      <button type="button" class="btn" onclick="openPopup('exp-accounting')">Parras and Associates</button>
-      <div class="popup" id="exp-accounting" aria-hidden="true">
-        <div class="popup-content">
-          <h3>Accounting Assistant</h3>
-
-          <ul>
-            <li>Implemented automated solutions for data entry and integration, improving productivity and accuracy.</li>
-            <li>Used MYOB and advanced Excel for client data management, analysis, and reporting.</li>
-          </ul>
-
-          <div class="popup-actions">
-            <button type="button" onclick="closePopup('exp-accounting')">Close</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Cisco -->
-      <button type="button" class="btn" onclick="openPopup('exp-cisco')">Cisco</button>
-      <div class="popup" id="exp-cisco" aria-hidden="true">
-        <div class="popup-content">
-          <h3>Job Shadowing</h3>
-          <img src="{{ '/images/cisco.png' | url }}" class="logo" alt="Cisco logo">
-
-          <ul>
-            <li>Contributed analytical insights to discussions, influencing data-centric decision-making in marketing.</li>
-            <li>Collaborated on analysis of market trends and consumer behaviours.</li>
-          </ul>
-
-          <div class="popup-actions">
-            <button type="button" onclick="closePopup('exp-cisco')">Close</button>
-          </div>
-        </div>
-      </div>
-
+      {% for exp in experience_list %}
+        <button type="button" class="btn" onclick="openPopup('{{ exp.id }}')">
+          {{ exp.company }}
+        </button>
+      {% endfor %}
     </div>
+
+    {% for exp in experience_list %}
+      <div class="popup" id="{{ exp.id }}" aria-hidden="true">
+        <div class="popup-content">
+          {% if exp.logo %}
+            <img src="{{ exp.logo | url }}" class="logo" alt="{{ exp.company }} logo">
+          {% endif %}
+          
+          <h3>{{ exp.role }}</h3>
+          <p><strong>{{ exp.company }}</strong></p>
+          
+          <ul>
+            {% for bullet in exp.bullets %}
+              <li>{{ bullet }}</li>
+            {% endfor %}
+          </ul>
+
+          <div class="popup-actions">
+            <button type="button" onclick="closePopup('{{ exp.id }}')">Close</button>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
   </section>
 </section>
 

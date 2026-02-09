@@ -1,7 +1,7 @@
 [
     {
       "id": "popup7",
-      "title": "Achievement Prediction Ensemble Models",
+      "title": "Achievement Prediction Ensemble Models Project",
       "description": "This project investigates the key drivers of reading and mathematics performance among kindergarten students. Using a multi-level dataset (student, teacher, and school levels), we employed a variety of econometric and machine learning models to identify the most accurate predictors of academic success.",
       "bullets": [
         "<strong>Top Model:</strong> XGBoost outperformed all other models with a combined Mean Squared Error (MSE) of 990.22.",
@@ -13,7 +13,7 @@
     },
     {
       "id": "popup1",
-      "title": "IBM Machine Learning Projects",
+      "title": "IBM Machine Learning Project",
       "description": "Analysing datasets and solving real-world problems in collaboration with IBM, utilizing a suite of enterprise tools to deliver solutions.",
       "bullets": [
         "<strong>Data Processing:</strong> Using Python and Pandas for cleaning and transforming data.",

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "exp-iag",
+    "company": "IAG",
+    "role": "Technology Intern",
+    "logo": "/images/iag-logo-keyline-purple.png",
+    "bullets": [
+      "Implemented automation workflows in Atlassian to streamline task tracking and project visibility.",
+      "Designed dashboards using SQL to monitor operational processes and team performance.",
+      "Documented workflows and automations in Jira, Confluence, and SharePoint."
+    ]
+  },
+  {
+    "id": "exp-dataarmy",
+    "company": "Data Army",
+    "role": "Data Engineering Intern",
+    "logo": "/images/DataArmy.png",
+    "bullets": [
+      "Built cloud solutions using Snowflake, AWS, and Microsoft Azure to deliver optimised client solutions.",
+      "Developed machine learning models to analyse data and deliver targeted solutions.",
+      "Managed data warehouses to improve storage, retrieval, and processing."
+    ]
+  },
+  {
+    "id": "exp-campari",
+    "company": "Campari Group",
+    "role": "Software Engineering Intern",
+    "logo": "/images/campari-group-logo.png",
+    "bullets": [
+      "Developed and automated a solution for the APAC team to validate database accuracy, improving data quality and integrity.",
+      "Engineered an automation workflow to streamline data flow between customers and third parties, improving transparency and governance.",
+      "Used Power Automate, SAP, Excel, Python, and TypeScript to test, optimise, and implement automation processes.",
+      "Collaborated with data management to align warehouses and metrics across US, Italy, Japan, China, and Singapore.",
+      "Maintained data pipelines to ensure efficient operations and international consistency."
+    ]
+  },
+  {
+    "id": "exp-accounting",
+    "company": "Parras and Associates",
+    "role": "Accounting Assistant",
+    "bullets": [
+      "Implemented automated solutions for data entry and integration, improving productivity and accuracy.",
+      "Used MYOB and advanced Excel for client data management, analysis, and reporting."
+    ]
+  },
+  {
+    "id": "exp-cisco",
+    "company": "Cisco",
+    "role": "Job Shadowing",
+    "logo": "/images/cisco.png",
+    "bullets": [
+      "Contributed analytical insights to discussions, influencing data-centric decision-making in marketing.",
+      "Collaborated on analysis of market trends and consumer behaviours."
+    ]
+  }
+]
