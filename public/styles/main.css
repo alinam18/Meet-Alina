@@ -346,6 +346,13 @@ body.projects .projects {
 }
 
 /* weather stylings */
+.weather-popup-body {
+  display: flex;
+  align-items: center; /* Vertically centers the icon and text */
+  margin: 20px 0;
+  gap: 15px;
+  text-align: left; 
+}
 
 .weather-link {
   font-size: 14px;
@@ -365,7 +372,6 @@ body.projects .projects {
   left: 0;
   width: 100%;
   height: 100%;
-  /* background: rgba(0, 0, 0, 0.8); Dims the background */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -380,9 +386,26 @@ body.projects .projects {
   border-radius: 15px;
   text-align: center;
   position: relative;
+  width: 40%;
 }
 
-.weather-icon-box img {
-  width: 30%;
+.weather-icon-box  {
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: center;
 
+}
+.weather-icon-box img {
+  width: 100%;
+
+}
+
+.weather-stats {
+  flex: 0 0 60%;     
+}
+
+.temp-display {
+  font-size: 4rem;      
+  margin: 10px 0;      /* Space above and below */
+  line-height: 1;
 }

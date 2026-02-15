@@ -1,33 +1,40 @@
 {% set imgBase = "/images/weather_pics/" %}
 <div id="weather-popup" class="weather-popup hidden">
     <div class="popup-content">
-        
         <h2>Sydney Weather Status</h2>
         
-        <div class="weather-icon-box">
-            {# Logic to map WMO status_code to your specific images #}
-            {% if weather.status_code == 0 %}
-                <img src="{{ (imgBase + 'Sun.png') | url }}" alt="Sunny">
-            {% elif weather.status_code >= 1 and weather.status_code <= 3 %}
-                <img src="{{ (imgBase + 'Cloudy.png') | url }}" alt="Cloudy">
-            {% elif weather.status_code == 45 or weather.status_code == 48 %}
-                <img src="/images/weather_pics/Good.png" alt="Foggy but Good">
-            {% elif (weather.status_code >= 51 and weather.status_code <= 67) or (weather.status_code >= 80 and weather.status_code <= 82) %}
-                <img src="/images/weather_pics/Rain.png" alt="Rainy">
-            {% elif (weather.status_code >= 71 and weather.status_code <= 77) or (weather.status_code >= 85 and weather.status_code <= 86) %}
-                <img src="/images/weather_pics/Snow.png" alt="Snowing">
-            {% elif weather.status_code >= 95 %}
-                <img src="/images/weather_pics/Thunder.png" alt="Thunderstorm">
-            {% else %}
-                <img src="/images/weather_pics/Good.png" alt="Fair Weather">
-            {% endif %}
-        </div>
-        <div class="weather-stats">
-            <p><span class="label">Date:</span> {{ weather.last_updated | dateFilter }}</p>
-            <p><span class="label">Temp:</span> {{ weather.temperature }}°C</p>
-            <p><span class="label">Humidity:</span> {{ weather.humidity }}%</p>
+        <div class="weather-popup-body">
+            
+            <div class="weather-icon-box">
+                {% if weather.status_code == 0 %}
+                    <img src="{{ (imgBase + 'Sun.png') | url }}" alt="Sunny">
+                {% elif weather.status_code >= 1 and weather.status_code <= 3 %}
+                    <img src="{{ (imgBase + 'Cloudy.png') | url }}" alt="Cloudy">
+                {% elif weather.status_code == 45 or weather.status_code == 48 %}
+                    <img src="{{ (imgBase + 'Good.png') | url }}" alt="Foggy">
+                {% elif (weather.status_code >= 51 and weather.status_code <= 67) or (weather.status_code >= 80 and weather.status_code <= 82) %}
+                    <img src="{{ (imgBase + 'Rain.png') | url }}" alt="Rainy">
+                {% elif (weather.status_code >= 71 and weather.status_code <= 77) or (weather.status_code >= 85 and weather.status_code <= 86) %}
+                    <img src="{{ (imgBase + 'Snow.png') | url }}" alt="Snowing">
+                {% elif weather.status_code >= 95 %}
+                    <img src="{{ (imgBase + 'Thunder.png') | url }}" alt="Thunderstorm">
+                {% else %}
+                    <img src="{{ (imgBase + 'Good.png') | url }}" alt="Fair Weather">
+                {% endif %}
+            </div>
+
+            <div class="weather-stats">
+                <div class="temp-display">
+                    {{ weather.temperature }}°
+                </div>
+                <!-- <p><span class="label">Temp:</span> {{ weather.temperature }}°C</p> -->
+                <p><span class="label"></span> {{ weather.last_updated | dateFilter }}</p>
+                <p><span class="label">Humidity:</span> {{ weather.humidity }}%</p>
+            </div>
         </div>
 
-        <button class="close-btn" onclick="toggleWeather()">close</button>
+        <a href="javascript:void(0)" onclick="toggleWeather()" class="close-btn" style="color: #333">
+            close
+        </a>
     </div>
 </div>
