@@ -28,6 +28,13 @@
     <!-- <script src="{{ '/scripts/main.js' | url }}" defer></script> -->
 
     <script>
+      // weather popups
+      function toggleWeather() {
+        const popup = document.getElementById('weather-popup');
+        if (popup) {
+          popup.classList.toggle('hidden');
+        }
+      }
       const canvas = document.getElementById('trail-canvas');
       const ctx = canvas.getContext('2d');
       let particles = [];

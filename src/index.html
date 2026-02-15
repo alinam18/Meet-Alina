@@ -10,6 +10,13 @@ pageClass: home
   <div class="sectionOne">
     <h1 class="animation">Hello World,<br>I'm Alina</h1>
     <p class="animation">Get to know me a little bit :)</p>
+    <a href="javascript:void(0)" onclick="toggleWeather()" class="weather-link animation">
+      Check the Weather
+    </a>
   </div>
 
+
 </section>
+
+{% include "components/weather-popups.njk" %}
+
