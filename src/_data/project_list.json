@@ -1,5 +1,18 @@
 [
-    {
+      {
+        "id": "popup8",
+        "title": "Automated Weather ETL Pipeline",
+        "description": "A full-stack data engineering project that automates the extraction, transformation, and loading (ETL) of meteorological data. Utilising Python and the Open-Meteo API, the pipeline runs via GitHub Actions on a 6-hour cron schedule, injecting structured JSON data into a static Eleventy environment to power a real-time weather dashboard.",
+        "bullets":  [
+          "<strong>End-to-End ETL Lifecycle:</strong> Completed pipeline covering Extraction (API to Python), Transformation (data cleaning and date formatting), and Loading (JSON injection into a static site).",
+          "<strong>Automation:</strong> Using GitHub Actions for Automation to retrieve informations"
+        ],
+        
+        "link": "/downloads/MachineLearningProject.pdf",
+        "github": "https://github.com/alinam18/Meet-Alina/blob/main/src/_includes/components/weather-popups.njk"
+
+      },
+      {
       "id": "popup7",
       "title": "Achievement Prediction Ensemble Models Project",
       "description": "This project investigates the key drivers of reading and mathematics performance among kindergarten students. Using a multi-level dataset (student, teacher, and school levels), we employed a variety of econometric and machine learning models to identify the most accurate predictors of academic success.",
