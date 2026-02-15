@@ -29,6 +29,8 @@ def extract_weather():
         "temperature": current['temperature_2m'],
         "humidity": current['relative_humidity_2m'],
         "status_code": current['weather_code'],
+        "rain": current['rain'],
+        "is_day": current['is_day'],
         "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "location": "Sydney"
     }

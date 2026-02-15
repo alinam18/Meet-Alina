@@ -1,0 +1,12 @@
+<div id="weather-popup" class="weather-popup hidden">
+    <div class="popup-content">
+      <button class="close-btn" onclick="toggleWeather()">×</button>
+      <h2>Sydney Weather Status</h2>
+      <div class="weather-stats">
+        <p><span class="label">Temp:</span> {{ weather.temperature }}°C</p>
+        <p><span class="label">Humidity:</span> {{ weather.humidity }}%</p>
+      </div>
+      <p class="timestamp">Last sync: {{ weather.last_updated }}</p>
+      <a href="/weather-details" class="details-link">View Full ETL Report →</a>
+    </div>
+  </div>
