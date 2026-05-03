@@ -1,9 +1,9 @@
 {
-    "temperature": 17.2,
-    "humidity": 84,
+    "temperature": 23.9,
+    "humidity": 55,
     "status_code": 3,
     "rain": 0.0,
-    "is_day": 0,
-    "last_updated": "2026-05-02 19:05:53",
+    "is_day": 1,
+    "last_updated": "2026-05-03 03:37:25",
     "location": "Sydney"
 }
